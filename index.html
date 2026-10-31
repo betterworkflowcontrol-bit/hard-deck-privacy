@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hard Deck — Privacy Policy</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 24px 20px 64px; line-height: 1.55; color: #1a1a1a; background: #fff; }
+  h1 { font-size: 1.6em; margin-bottom: 4px; }
+  h2 { font-size: 1.15em; margin-top: 2em; border-top: 1px solid #e5e5e5; padding-top: 1.2em; }
+  .updated { color: #666; font-size: 0.9em; margin-bottom: 2em; }
+  table { width: 100%; border-collapse: collapse; margin: 1em 0; font-size: 0.95em; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #eee; vertical-align: top; }
+  th { background: #f7f7f7; }
+  code { background: #f2f2f2; padding: 1px 5px; border-radius: 4px; font-size: 0.9em; }
+  .note { background: #fff8e6; border-left: 3px solid #e0a800; padding: 10px 14px; margin: 1em 0; font-size: 0.95em; }
+</style>
+</head>
+<body>
+
+<h1>Hard Deck — Privacy Policy</h1>
+<p class="updated">Last updated: 30 October 2026</p>
+
+<p>Hard Deck is a skydiving logbook app. This page explains, in plain English, what information the app uses, why, and how you can delete it.</p>
+
+<p><strong>Developer:</strong> Mark &nbsp;·&nbsp; <strong>Contact:</strong> betterworkflowcontrol@gmail.com</p>
+
+<h2>The short version</h2>
+<ul>
+  <li>Hard Deck is a logbook. Its main job is to record your jumps, and it does that using your phone's sensors and location while you're checked in.</li>
+  <li>By default, everything stays on your phone. Nothing is sent anywhere unless you turn on cloud sync or sign in.</li>
+  <li>If you sign in with Apple to back up your logbook or connect with friends, a small amount of information is stored securely so that works.</li>
+  <li>You can delete your account and everything tied to it, inside the app, at any time.</li>
+  <li>We don't show ads, don't sell your data, and don't track you across other apps or websites.</li>
+</ul>
+
+<h2>What the app uses, and why</h2>
+<table>
+<tr><th>Information</th><th>What it's for</th><th>Leaves your phone?</th></tr>
+<tr><td>Location (GPS)</td><td>Plotting your landing pattern on a map and working out where you exited/landed</td><td>Only if you turn on cloud sync</td></tr>
+<tr><td>Motion &amp; altitude sensors</td><td>Automatically detecting exit, freefall, opening and landing, so you don't have to type every jump in by hand</td><td>Only the numbers it works out (exit height, freefall time etc.), not raw sensor data, and only if sync is on</td></tr>
+<tr><td>Microphone (optional feature)</td><td>Letting you dictate a debrief instead of typing it. Your phone does the listening itself where possible; nothing is recorded or kept</td><td>If your phone can't do this itself, the recognised text (never the audio) may be sent to a third-party AI service (Anthropic) to be sorted into the right sections</td></tr>
+<tr><td>Your name, in Settings</td><td>So your own jumps are labelled as yours if you sync</td><td>Only if sync is on</td></tr>
+<tr><td>Apple ID sign-in</td><td>Backing up your logbook and connecting with friends for remote jump sign-off</td><td>Yes — Apple issues a private identifier we use to recognise your account; we don't receive your real Apple ID email unless you choose to share it</td></tr>
+<tr><td>Friends you connect with</td><td>Letting a friend who jumped with you sign off a jump remotely, instead of only in person</td><td>A connection code/QR is exchanged so your phones can recognise each other</td></tr>
+<tr><td>Licence number &amp; signature (optional, in Settings)</td><td>So signing off a friend's jump is one tap instead of drawing a signature every time</td><td>Only if sync/friends features are used</td></tr>
+<tr><td>A once-a-day "app opened" signal</td><td>So we can see roughly how many people are actually using the app — just a count, not tied to you</td><td>Yes — a timestamp and a random code that only tells us "this install opened today," never linked to your name, jumps, or any other data</td></tr>
+</table>
+
+<div class="note">
+If you never turn on sync, never sign in, and never use dictation, nothing listed above leaves your phone at all — the app works entirely offline as a private logbook.
+</div>
+
+<h2>Where it's stored</h2>
+<p>Synced data is stored with <strong>Supabase</strong>, a backend hosting provider. Dictated text, when sent, is processed by <strong>Anthropic</strong> (the company behind Claude) solely to sort it into the right sections of your debrief, and is not used to train their models beyond their standard processing terms. Speech recognition, when it can't run on your phone, is handled by Apple.</p>
+
+<h2>Other people's information</h2>
+<p>If you're an instructor and you enter details about a student (name, jump count, notes), you are responsible for having a proper reason and their permission to hold that information. This information is private to you and not shared beyond the app's normal sync.</p>
+
+<h2>Deleting your data</h2>
+<p>Go to <strong>Settings → Delete my account</strong> inside the app. This permanently deletes your account and every piece of data tied to it from our servers — not just deactivates it. If you've never signed in or synced, simply deleting the app removes everything, since nothing was ever sent anywhere.</p>
+
+<h2>Not a safety device</h2>
+<p>Hard Deck is a logging aid. It is not an altimeter, audible, or any kind of safety-critical equipment, and sensor readings can be wrong. Never rely on it in place of your proper safety equipment or training.</p>
+
+<h2>Children</h2>
+<p>Hard Deck is not directed at children and we don't knowingly collect information from anyone under 13 (or the relevant age in your country).</p>
+
+<h2>Changes to this policy</h2>
+<p>If this policy changes in a meaningful way, the "last updated" date at the top of this page will change. Continued use of the app after a change means you accept the updated policy.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy or your data: betterworkflowcontrol@gmail.com</p>
+
+</body>
+</html>
